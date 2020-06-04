@@ -1,0 +1,107 @@
+body {
+	background-color: #000;
+	color: #fff;
+}
+
+.ui-accordion-header-active {
+	color: #508b85;
+}
+
+.ui-accordion-header-active .acc--hr {
+	display: none;
+}
+
+h4 {
+	margin-left: 15px;
+}
+
+.acc--first,
+.acc--second,
+.acc--third,
+.acc--fourth {
+	margin-bottom: 3rem;
+}
+
+#accordion h3 {
+	position: relative;
+	margin-left: 15px;
+	color: #fff;
+}
+
+#accordion h3:focus {
+	outline: none;
+}
+
+#accordion h3 .acc--hr {
+	width: 50%;
+	position: absolute;
+}
+
+#accordion .acc--txt--area {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#accordion .acc--txt--area .acc--white--space {
+	-webkit-box-flex: 30%;
+	-ms-flex: 30%;
+	flex: 30%;
+	border-top: 1px solid #fff;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+#accordion .acc--txt--area .acc--inner--txt {
+	-webkit-box-flex: 70%;
+	-ms-flex: 70%;
+	flex: 70%;
+}
+
+#accordion .acc-buttons {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-box-pack: space-evenly;
+	-ms-flex-pack: space-evenly;
+	justify-content: space-evenly;
+	margin-top: 2rem;
+}
+
+#accordion .acc-buttons button {
+	padding: 10px 15px;
+	border-radius: 15px;
+	border: none;
+	background-color: transparent;
+}
+
+#accordion .acc-buttons button a {
+	text-decoration: none;
+}
+
+#accordion .acc-buttons button:first-child {
+	border: 1px solid #508b85;
+}
+
+#accordion .acc-buttons button:first-child a {
+	color: #508b85;
+}
+
+#accordion .acc-buttons button:nth-child(2) {
+	border: 1px solid grey;
+}
+
+#accordion .acc-buttons button:nth-child(2) a {
+	color: grey;
+}
+/*# sourceMappingURL=style.css.map */

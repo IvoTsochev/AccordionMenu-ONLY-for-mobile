@@ -1,0 +1,83 @@
+$primary-color: #508b85;
+
+body {
+	background-color: #000;
+	color: #fff;
+}
+
+.ui-accordion-header-active {
+	color: $primary-color;
+	.acc--hr {
+		display: none;
+	}
+}
+
+.ui-accordion-header-collapsed {
+}
+
+h4 {
+	margin-left: 15px;
+}
+
+.acc--first,
+.acc--second,
+.acc--third,
+.acc--fourth {
+	margin-bottom: 3rem;
+}
+
+#accordion {
+	h3 {
+		position: relative;
+		margin-left: 15px;
+		&:focus {
+			outline: none;
+		}
+		.acc--hr {
+			width: 50%;
+			position: absolute;
+		}
+	}
+	.acc--txt--area {
+		display: flex;
+		flex-direction: row;
+		box-sizing: border-box;
+		.acc--white--space {
+			flex: 30%;
+			border-top: 1px solid #fff;
+			margin-right: 15px;
+			margin-left: 15px;
+		}
+		.acc--inner--txt {
+			flex: 70%;
+		}
+	}
+	.acc-buttons {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		margin-top: 2rem;
+
+		button {
+			padding: 10px 15px;
+			border-radius: 15px;
+			border: none;
+			background-color: transparent;
+			a {
+				text-decoration: none;
+			}
+			&:first-child {
+				border: 1px solid $primary-color;
+				a {
+					color: $primary-color;
+				}
+			}
+			&:nth-child(2) {
+				border: 1px solid grey;
+				a {
+					color: grey;
+				}
+			}
+		}
+	}
+}
